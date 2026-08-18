@@ -1,23 +1,40 @@
-# 🍔 Landing Page
+# 💎 Loja de Acessórios
 
-Uma landing page responsiva com tema de restaurante, construída com HTML, CSS e JavaScript. Este projeto apresenta um design limpo com animações suaves.
+Uma landing page responsiva desenvolvida para uma **loja de acessórios**, com foco em apresentar produtos de forma elegante, moderna e atrativa. O projeto foi construído com HTML, CSS e JavaScript, trazendo um visual sofisticado, animações suaves e uma experiência agradável tanto no computador quanto no celular.
+## ✨ Sobre o Projeto
 
-## 🌐 Visualize o projeto:
+O site foi desenvolvido para destacar acessórios como:
 
-**[Ver Projeto Online](https://larissakich.github.io/landing-page-food-theme/)**
+* Colares
+* Brincos
+* Anéis
+* Relógios
+* Pulseiras
+* Peças especiais
+
+A página conta com áreas destinadas à apresentação dos produtos, catálogo, informações da loja, contatos e redes sociais.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5**: Marcação semântica
-- **CSS3**: Estilização
-- **JavaScript**: Funcionalidade interativa
-- **jQuery**: Manipulação DOM e manipulação de eventos
-- **ScrollReveal**: Animações de scroll
-- **Font Awesome**: Ícones
-- **Google Fonts**: Fontes
+* **HTML5**: Estrutura e organização do conteúdo
+* **CSS3**: Estilização, responsividade e efeitos visuais
+* **JavaScript**: Funcionalidades e interações
+* **jQuery**: Manipulação do DOM e eventos
+* **ScrollReveal**: Animações durante a navegação
+* **Font Awesome**: Ícones
+* **Google Fonts**: Tipografia personalizada
 
-## 🚀 Como Começar
+## 💎 Principais Características
 
-1. Clone ou baixe os arquivos do projeto
-2. Abra o arquivo `index.html` no seu navegador
-3. Não é necessária configuração adicional - todas as dependências são carregadas via CDN
+* Design moderno e sofisticado
+* Layout totalmente responsivo
+* Vitrine de acessórios
+* Cards para apresentação dos produtos
+* Botões de contato e catálogo
+* Integração com redes sociais
+* Animações suaves durante a navegação
+* Interface adaptada para celulares, tablets e computadores
+
+## 📱 Objetivo
+
+O objetivo do projeto é proporcionar uma apresentação profissional para uma loja de acessórios, valorizando os produtos e facilitando o contato dos clientes com a loja através do catálogo, telefone e redes sociais.
