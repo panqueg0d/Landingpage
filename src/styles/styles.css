@@ -5,6 +5,7 @@
 @import url('./menu.css');
 @import url('./testimonials.css');
 @import url('./footer.css');
+@import "{{ site.theme }}";
 
 
 /* =====================================================
@@ -501,4 +502,4 @@ a {
     background: #d98288;
 }
 
-@import "{{ site.theme }}";
+
