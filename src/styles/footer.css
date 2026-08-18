@@ -1,0 +1,235 @@
+/* =====================================================
+   FOOTER
+   MESMO PADRÃO VISUAL DO HEADER
+===================================================== */
+
+footer {
+    width: 100%;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        120deg,
+        #2e1713,
+        #571d18,
+        #8f302b,
+        #571d18,
+        #2e1713
+    );
+
+    background-size: 300% 300%;
+
+    animation: footerGradient 10s ease infinite;
+
+    box-shadow:
+        0px -5px 25px rgba(46, 23, 19, 0.30);
+}
+
+
+/* =====================================================
+   GRADIENTE ANIMADO
+===================================================== */
+
+@keyframes footerGradient {
+
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* =====================================================
+   REFLEXO PASSANDO PELO FOOTER
+===================================================== */
+
+footer::before {
+    content: "";
+
+    position: absolute;
+
+    width: 230px;
+    height: 220%;
+
+    top: -60%;
+    left: -350px;
+
+    background: linear-gradient(
+        90deg,
+
+        transparent 0%,
+
+        rgba(255, 215, 190, 0.05) 20%,
+
+        rgba(240, 166, 170, 0.22) 45%,
+
+        rgba(255, 255, 255, 0.30) 50%,
+
+        rgba(240, 166, 170, 0.22) 55%,
+
+        rgba(255, 215, 190, 0.05) 80%,
+
+        transparent 100%
+    );
+
+    filter: blur(20px);
+
+    transform: rotate(20deg);
+
+    pointer-events: none;
+
+    z-index: 0;
+
+    animation: footerFlash 7s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   MOVIMENTO DO REFLEXO
+===================================================== */
+
+@keyframes footerFlash {
+
+    0% {
+        left: -350px;
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        left: calc(100% + 250px);
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   CONTEÚDO
+===================================================== */
+
+#footer_items {
+    min-height: 130px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px 8%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =====================================================
+   COPYRIGHT CENTRALIZADO
+===================================================== */
+
+#copyright {
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #ffffff;
+
+    font-weight: 500;
+
+    letter-spacing: 0.3px;
+
+    white-space: nowrap;
+}
+
+/* =====================================================
+   REDES SOCIAIS
+===================================================== */
+
+#footer_items .social-media-buttons {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+#footer_items .social-media-buttons a {
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid rgba(240, 166, 170, 0.20);
+
+    box-shadow:
+        0px 5px 18px rgba(0, 0, 0, 0.28);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+#footer_items .social-media-buttons a i {
+    color: #711f27;
+}
+
+
+#footer_items .social-media-buttons a:hover {
+    transform: translateY(-5px) scale(1.06);
+
+    background: #ffffff;
+
+    box-shadow:
+        0px 10px 25px rgba(0, 0, 0, 0.40),
+        0px 0px 20px rgba(240, 166, 170, 0.20);
+}
+
+
+#footer_items .social-media-buttons a:hover i {
+    color: #d98288;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media screen and (max-width: 600px) {
+
+    #footer_items {
+        min-height: 160px;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 22px;
+
+        padding: 30px 8%;
+    }
+
+
+    footer::before {
+        width: 160px;
+    }
+}
